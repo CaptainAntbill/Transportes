@@ -1,26 +1,57 @@
-.nombre:hover {
+@mixin nombre {
     transform: scale(1.2);
   }
 
-  #grad1 {
+  @function nombre($transform: 5){
+    @return $transform/1;
+  }  
+
+.nombre:hover{
+  @include nombre;
+}
+
+ @mixin grad1 {
     height: 200px;
     background-color: #50d4fc;
     background-image: linear-gradient(#50d4fc, #507efc); 
   }
 
-  .letras {
+  @function grad1($height: 250px){
+    @return $height/2;
+  }
+
+  #grad1 {
+    @include grad1;
+  }
+
+  @mixin letras {
     text-align: center;  
     font-size: 80px;   
     color: #507efc;
     text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2;
   }
 
-  .item {
+  @function letras($font-size: 16px){
+    @return $font-size/2;
+  }
+
+  .letras {
+    @include letras;
+  }
+
+  @mixin item {
     border-radius: 5px;
     padding: 10px;
     background-color: #f2f2f2;
     transition: 1s;
+}
 
+@function item($border-radius: 6px){
+  @return $border-radius/2;
+}
+
+.item {
+  @include item;
 }
 
 .item:hover{
@@ -28,7 +59,7 @@
     background-color: #bfccf1;  
 }
 
-.boton {
+@mixin boton {
   color: white;
   padding: 10px 22px;
   text-align: center;
@@ -40,3 +71,17 @@
   border: 2px solid #008CBA;
   border-radius: 2px;
 }
+
+.boton {
+  @include boton;
+}
+
+@function boton($padding: 12px) {
+  @return $padding/2;
+}
+
+
+
+
+
+
