@@ -47,19 +47,19 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label>Vehiculo</label>
-                <input type="text" class="form-control">
+                <input id="vehiculo" type="text" class="form-control">
               </div>
               <div class="form-group col-md-4">
                 <label for="inputState">Tipo Vehiculo</label>
-                <select id="inputState" class="form-control">
-                  <option>Terrestre</option>
-                  <option>Aereos</option>
-                  <option>Marinos</option>
+                <select id="tipo" id="inputState" class="form-control">
+                  <option value="terrestre">Terrestre</option>
+                  <option value="aereo">Aereos</option>
+                  <option value="marino">Marinos</option>
                 </select>
               </div>
               <div class="form-group col-md-2">
                 <label for="inputAddress">Anio</label>
-              <input type="text" class="form-control">
+              <input id="anio" type="text" class="form-control">
               </div>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
