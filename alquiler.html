@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="nombre navbar-brand" href="index.html">
+            Transportes
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link " href="contacto.html">Contacto</a>
+            <a class="nav-item nav-link " href="alquiler.html">Alquileres</a>
+          </div>
+        </div>
+    </nav><br>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid bg-info text-white">
+            <div class="container">
+                <h1 class="display-4">Alquiler de un Vehiculo</h1>
+                <p class="lead">Complete la informacion para alquilar un vehiculo.</p>
+            </div>
+        </div>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Email</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label>Nombre Completo</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Dirreccion</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Vehiculo</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Tipo Vehiculo</label>
+                <select id="inputState" class="form-control">
+                  <option>Terrestre</option>
+                  <option>Aereos</option>
+                  <option>Marinos</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputAddress">Anio</label>
+              <input type="text" class="form-control">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+    </div>
+</body>
+<script src="bootstrap/js/jquery-3.4.0.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+</html>
